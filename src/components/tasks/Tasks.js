@@ -4,7 +4,7 @@ import "./task.css";
 
 export const Tasks = ({ preguntas, escenario }) => {
   return (
-    <>
+    <article>
       <h3>Tareas</h3>
       <p className="p">Escenario: {escenario}</p>
       {preguntas?.map(({ tiempo, tipoTarea, respuesta, texto }, i) => {
@@ -18,6 +18,6 @@ export const Tasks = ({ preguntas, escenario }) => {
           </article>
         );
       })}
-    </>
+    </article>
   );
 };
